@@ -1,0 +1,273 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.custom-button {
+  position: absolute;
+  bottom: 156px;
+  left: calc(35% - 273px);
+  max-width: calc(50% - 40px);
+  width: 16vw;
+  height: 6vh;
+  border-radius: 80px;
+  background-color: #1820ef;
+  color: #fff;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .custom-button {
+    width: auto;
+    max-width: none;
+    left: calc(50% - 50%);
+    bottom: 20px;
+  }
+}
+
+.button-text {
+  font-weight: bold;
+  margin-left: 1vw;
+  white-space: nowrap;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #fff;
+}
+
+.arrow-icon {
+  height: 20px;
+  margin-left: 6vw;
+}
+
+.order-button {
+  width: 220px;
+  height: 60px;
+  border-radius: 80px;
+  background-color: #1820ef;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  left: 43%;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.order-button img {
+  width: 24px;
+  height: auto;
+}
+
+.order-button.enabled {
+  cursor: pointer;
+}
+
+.order-button:disabled {
+  background-color: #c5c5c5;
+  color: #999;
+  cursor: auto;
+}
+
+.order-button-text {
+  font-weight: bold;
+  margin-left: 1px;
+  white-space: nowrap;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #fff;
+}
+
+.order-arrow-icon {
+  height: 24px;
+  margin-left: 10px;
+}
+
+main {
+  background-color: #fafaed;
+  padding: 20px;
+}
+
+section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  width: 275px;
+  background-color: #fafaed;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: blue;
+  transition: color 0.3s;
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card span {
+  display: block;
+  margin-top: auto;
+  height: 30px;
+  color: #e91e63;
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.card.selected {
+  background-color: #1820ef;
+}
+
+.card.selected h3,
+.card.selected p,
+.card.selected span {
+  color: #fff;
+}
+
+.card.selected span {
+  color: yellow;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.credit {
+  background-color: #444;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-card {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error-card h3 {
+  color: #721c24;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.error-card p {
+  color: #721c24;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+section .card {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.broths {
+  margin-top: 80px;
+}
+
+.proteins {
+  margin-top: 80px;
+}
+
+.order-button.disabled .order-arrow-icon {
+  content: url("src/assets/FlechaDireitaDesativada.svg");
+}
+
+.order-button.enabled .order-arrow-icon {
+  content: url("src/assets/FlechaDireita.svg");
+}
+
+p {
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h2-broths,
+.h2-proteins {
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  margin-bottom: -7px;
+}

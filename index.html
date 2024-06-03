@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamenGO!</title>
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <section>
+      <img src="src/assets/Hero.svg" alt="Hero Background" class="hero-bg">
+      <a href="#broths" class="custom-button">
+          <span class="button-text">ORDER NOW</span>
+          <img src="src/assets/FlechaDireita.svg" alt="Seta" class="arrow-icon">
+      </a>
+    </section>
+</header>
+    <main>
+      <section id="broths" class="broths">
+        <h2 class="h2-broths">First things first: select your favorite broth.</h2>
+        <p>It will give the whole flavor on your ramen soup.</p>
+        <div class="brothsCards cards">
+        </div>
+        <div class="error-card hidden">
+            <h3>Error</h3>
+            <p>Failed to fetch broths. Please try again later.</p>
+        </div>
+    </section>
+    <section class="proteins">
+        <h2 class="h2-broths">It's time to choose (or not) your meat!</h2>
+        <p>Some people love, some don't. We have options for all tastes.</p>
+        <div class="proteinsCards cards">
+        </div>
+        <div class="error-card hidden">
+            <h3>Error</h3>
+            <p>Failed to fetch proteins. Please try again later.</p>
+        </div>
+    </section>
+    <button id="place-order-button" class="order-button" disabled>
+      <span class="order-button-text">PLACE MY ORDER</span>
+      <img src="src/assets/FlechaDireitaDesativada.svg" alt="Seta" class="order-arrow-icon">
+    </button>
+    </main>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

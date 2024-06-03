@@ -1,0 +1,138 @@
+.background {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 100vh;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.confirmation-image {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 354px;
+  height: 392px;
+  transform: translate(-50%, -50%);
+}
+
+.your-order {
+  position: absolute;
+  top: 58%;
+  left: 43%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  font-size: 18px;
+}
+
+.order-details {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #ffc024;
+  font-size: 32px;
+}
+
+.background-image {
+  width: 100%;
+}
+
+.small-image {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.preparation {
+  text-align: center;
+}
+
+.preparation-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preparation-image-1 {
+  width: 65.46px;
+  height: 71.31px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.preparation-image-2 {
+  margin-bottom: 10px;
+}
+
+.preparation-text-1 {
+  margin-top: 10px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #ff4e42;
+  font-size: 32px;
+  margin-bottom: -7px;
+}
+
+.preparation-text-2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  font-size: 16px;
+}
+
+#place-new-order {
+  margin-top: 20px;
+  width: 150px;
+}
+
+.back-button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 235px;
+  height: 60px;
+  border-radius: 80px;
+  background-color: #1820ef;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.button-text {
+  margin-right: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.arrow-icon {
+  height: 16px;
+  margin-left: 20px;
+}
